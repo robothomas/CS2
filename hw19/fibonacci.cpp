@@ -22,6 +22,12 @@ int fibR(int n, int prev = 1, int current = 0, int count = 0) {
 
 }
 
+// The true recursive function, not a something that basically mimics a for loop
+int fibR2(int n) {
+    if (n < 2) return n;
+    else return fibR2(n-1) + fibR2(n-2);
+}
+
 int fibI(int n) {
     int prev = 1;
     int current = 0;
